@@ -19,11 +19,11 @@ The repository contains:
 To use gammaGMM, import the github repository or simply download the files. You can find the benchmark datasets at this [[link](https://www.dbs.ifi.lmu.de/research/outlier-evaluation/DAMI/)]. Alternatively, feel free to use directly our results (i.e., the samples from the posterior) that you can find inside the results folder.
 
 
-## EXample-wise ConfidEncE of anomaly Detectors (ExCeeD)
+## GammaGMM: Estimating the Contamination Factor's Distribution in Unsupervised Anomaly Detection
 
 Given a dataset with attributes **X**, an unsupervised anomaly detector assigns to each example an anomaly score, representing its degree of anomalousness. Thus, the first step of gammaGMM is to use a set of M unsupervised detectors (passed as input by the user) to transform the data into an M dimensional score space. Then, it sets a DPGMM model on this score space. Each component of the DPGMM is ordered using our proposed ordering criterium. By measuring how anomalous the components are (jointly), we derive the contamination factor's posterior.
 
-Given a training dataset **X** and the user-specified hyperparameters p0 and phigh, the code can be used as in the Notebook file.
+Given a training dataset **X** and the user-specified hyperparameters p_0 and p_high, the code can be used as in the Notebook file.
 
 ## Dependencies
 
